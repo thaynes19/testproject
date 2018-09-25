@@ -9,7 +9,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 
-public class About_US extends AppCompatActivity {
+public class About_Us extends AppCompatActivity {
 
     ListView aboutus;
 
@@ -26,14 +26,14 @@ public class About_US extends AppCompatActivity {
         setContentView(R.layout.activity_about__us);
 
         aboutus = (ListView) findViewById(R.id.ListView);
-        adapter = new ArrayAdapter(About_US.this, android.R.layout.simple_list_item_1, strings);
+        adapter = new ArrayAdapter(About_Us.this, android.R.layout.simple_list_item_1, strings);
 
         aboutus.setAdapter(adapter);
 
         aboutus.setOnClickListener(new AdapterView.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Toast.makeText(About_US.this, "" + strings, Toast.LENGTH_LONG).show();
+                Toast.makeText(About_Us.this, "" + strings, Toast.LENGTH_LONG).show();
             }
         });
     }

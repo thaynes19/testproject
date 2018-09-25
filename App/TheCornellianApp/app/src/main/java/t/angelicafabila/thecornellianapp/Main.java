@@ -1,6 +1,5 @@
 package t.angelicafabila.thecornellianapp;
 
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,9 +11,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
-
 public class Main extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
