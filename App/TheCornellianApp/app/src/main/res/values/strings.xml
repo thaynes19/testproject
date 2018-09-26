@@ -1,13 +1,11 @@
 <resources>
     <string name="app_name">The Cornellian App</string>
-    <string name="email_us">Email Us</string>
     <string name="editorial_board">Editorial Board</string>
 
     <string-array name="items">
         <item>Home</item>
         <item>About Us</item>
         <item>Contact Us</item>
-        <item>Cornell Official Page</item>
     </string-array>
 
     <string-array name="staff">
