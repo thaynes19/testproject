@@ -11,6 +11,4 @@ public class Contact_Us extends AppCompatActivity {
         setContentView(R.layout.activity_contact_us);
     }
 
-
-
 }
