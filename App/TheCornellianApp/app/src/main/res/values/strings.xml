@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">The Cornellian App</string>
     <string name="editorial_board">Editorial Board</string>
+    <string name="feedbackButton">Submit Feedback</string>
+    <string name="messageHint">Your message here...</string>
+    <string name="namePrompt">Who are you?</string>
+    <string name="contactUsTitle">Contact Us!</string>
+    <string name="facebookButtonDesc">Image Button to take you to the Cornellian Facebook</string>
+    <string name="twitterButtonDesc">Image Button to take you to the Cornellian Twitter</string>
+    <string name="websiteButtonDesc">Image Button to take you to the Cornellian Website</string>
 
     <string-array name="items">
         <item>Home</item>
@@ -18,6 +25,6 @@
         <item>Copy Editor: </item>
         <item>Layout Editor: </item>
         <item>Social Media Manager: </item>
-        <item>Photographer</item>
+        <item>Photographer: </item>
     </string-array>
 </resources>
