@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">The Cornellian App</string>
+    <string name="email_us">Email Us</string>
+    <string name="editorial_board">Editorial Board</string>
+
+    <string-array name="items">
+        <item>Home</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+        <item>Cornell Official Page</item>
+    </string-array>
+
+    <string-array name="staff">
+        <item>Editorial Board</item>
+        <item>Editor-in-Chief: M.E. Scoonover-Nelson</item>
+        <item>Assistant Editor-in-Chief: Angel Fabila</item>
+        <item>News Editor: </item>
+        <item>Features Editor: </item>
+        <item>Arts and Entertainment Editor: </item>
+        <item>Copy Editor: </item>
+        <item>Layout Editor: </item>
+        <item>Social Media Manager: </item>
+        <item>Photographer</item>
+    </string-array>
+</resources>
