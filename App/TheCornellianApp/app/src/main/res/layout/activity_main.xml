@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Main"
-    android:background ="#BD63AA">
+    android:background ="@color/Background">
 
     <include
         layout = "@layout/action_bar"

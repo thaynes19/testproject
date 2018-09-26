@@ -14,6 +14,7 @@ public class Contact_Us extends AppCompatActivity {
         setContentView(R.layout.activity_contact_us);
     }
 
+
     /* Activity to send user to the Cornellian website. */
     public void website(View view){
         Intent websiteIntent = new Intent(Intent.ACTION_VIEW,
