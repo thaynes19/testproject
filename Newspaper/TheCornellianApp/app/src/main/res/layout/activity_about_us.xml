@@ -15,7 +15,7 @@
     <ImageView
         android:id="@+id/cornellianHead"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="131dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -36,14 +36,19 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="144dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_toStartOf="@+id/AboutUsButton"
+        android:layout_toLeftOf="@+id/AboutUsButton"
         android:text="@string/mainButtonText" />
 
     <Button
         android:id="@+id/AboutUsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/MainButton"
+        android:layout_below="@+id/cornellianHead"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
         android:text="@string/aboutUsButtonText" />
 
     <Button
@@ -53,16 +58,19 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
         android:layout_marginTop="145dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/AboutUsButton"
+        android:layout_toRightOf="@+id/AboutUsButton"
         android:text="@string/contactUsButtonText" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Introduction"
         android:layout_width="wrap_content"
         android:layout_height="140dp"
-        android:layout_above="@+id/textView5"
         android:layout_below="@+id/AboutUsButton"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -74,21 +82,56 @@
         android:layout_marginEnd="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginBottom="20dp"
-        android:text="\tThe Cornellian Newspaper is the school newspaper for Cornell College in Mount Vernon, Iowa. It has been in print for over eighty years. It publishes one paper copy each block and will be publishing shorter online articles between the weeks that there is no paper copy. "
+        android:text="\tThe Cornellian Newspaper is the school newspaper for Cornell College in Mount Vernon, Iowa. It has been in print for over eighty years. It publishes one paper copy each block and will be publishing shorter online articles between the weeks that there is no paper copy. If you have any suggestions or comments you wish to make about the paper, please direct them to the current editor in chief. If you are interested in joining our staff, please contact the current editor in chief."
         android:textColor="#FFF"
-        android:textSize="16dp"
+        android:textSize="12dp"
         app:fontFamily="serif" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="360dp"
-        android:layout_height="121dp"
+        android:id="@+id/EditorialHeader"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Introduction"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:text="Editorial Board"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        app:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/IntroHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Introduction"
+        android:layout_below="@+id/AboutUsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="-44dp"
+        android:text="Introduction"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        app:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/EditorialBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="106dp"
+        android:layout_below="@+id/EditorialHeader"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="51dp"
-        android:text="\tIf you have any suggestions or comments you wish to make about the paper, please direct them to the current editor in chief. If you are interested in joining our staff, please contact the current editor in chief."
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="8dp"
+        android:text="Editor in Chief: M.E. Scoonover-Nelson\nAssistant Editor in Chief: Angel Fabila\nNews Editor: Matthew McDermott\nFeatures Editor: Emily Maniacci\nArts and Entertainment Editor: Maddie Leman\nOpinion Editor: Sofia Lopera Cordona\nCopy Editor: Alexandra Lewyn\nLayout Editor: Sage Parker"
         android:textColor="#FFF"
-        android:textSize="16dp"
-        app:fontFamily="serif" />" />
+        android:textSize="12dp"
+        app:fontFamily="serif" />
 
 </RelativeLayout>
