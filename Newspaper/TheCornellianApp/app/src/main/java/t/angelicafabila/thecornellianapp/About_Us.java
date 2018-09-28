@@ -44,14 +44,11 @@ public class About_Us extends AppCompatActivity {
         });
     }
 
-    private void configureContactUsButton()
-    {
+    private void configureContactUsButton() {
         Button contactUsButton = (Button) findViewById(R.id.ContactUsButton);
-        contactUsButton.setOnClickListener(new View.OnClickListener()
-        {
+        contactUsButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 startActivity(new Intent(About_Us.this, Contact_Us.class));
             }
         });

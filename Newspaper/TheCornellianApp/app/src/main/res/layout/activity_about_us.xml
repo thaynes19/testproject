@@ -82,9 +82,9 @@
         android:layout_marginEnd="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginBottom="20dp"
-        android:text="\tThe Cornellian Newspaper is the school newspaper for Cornell College in Mount Vernon, Iowa. It has been in print for over eighty years. It publishes one paper copy each block and will be publishing shorter online articles between the weeks that there is no paper copy. If you have any suggestions or comments you wish to make about the paper, please direct them to the current editor in chief. If you are interested in joining our staff, please contact the current editor in chief."
+        android:text="@string/introduction"
         android:textColor="#FFF"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:fontFamily="serif" />
 
     <TextView
@@ -101,9 +101,9 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="116dp"
         android:layout_marginRight="116dp"
-        android:text="Editorial Board"
+        android:text="@string/editorHeader"
         android:textColor="#FFF"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:fontFamily="serif" />
 
     <TextView
@@ -115,9 +115,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:layout_marginBottom="-44dp"
-        android:text="Introduction"
+        android:text="@string/introHeader"
         android:textColor="#FFF"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:fontFamily="serif" />
 
     <TextView
@@ -129,9 +129,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="3dp"
         android:layout_marginBottom="8dp"
-        android:text="Editor in Chief: M.E. Scoonover-Nelson\nAssistant Editor in Chief: Angel Fabila\nNews Editor: Matthew McDermott\nFeatures Editor: Emily Maniacci\nArts and Entertainment Editor: Maddie Leman\nOpinion Editor: Sofia Lopera Cordona\nCopy Editor: Alexandra Lewyn\nLayout Editor: Sage Parker"
+        android:text="@string/editorialBoard"
         android:textColor="#FFF"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:fontFamily="serif" />
 
 </RelativeLayout>
