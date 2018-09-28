@@ -1,10 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".About_Us"
+    tools:context=".Main"
     android:background ="@color/Background">
 
-</android.support.constraint.ConstraintLayout>
+    <include
+        layout = "@layout/action_bar"
+        android:id = "@+id/actionbar">
+    </include>
+
+    <ImageView
+        android:id="@+id/cornellianHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/cornellianHead"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/cornellian_head" />
+
+    <Button
+        android:id="@+id/MainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/mainButtonText" />
+
+    <Button
+        android:id="@+id/AboutUsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/MainButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/aboutUsButtonText" />
+
+    <Button
+        android:id="@+id/ContactUsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/contactUsButtonText" />
+
+</RelativeLayout>

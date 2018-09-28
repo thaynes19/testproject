@@ -11,27 +11,52 @@
     <include
         layout = "@layout/action_bar"
         android:id = "@+id/actionbar">
-
     </include>
 
-    <Spinner
-        android:id="@+id/spinner_main"
+    <ImageView
+        android:id="@+id/cornellianHead"
         android:layout_width="match_parent"
-        android:layout_height="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/cornellianHead"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/cornellian_head" />
+
+    <Button
+        android:id="@+id/MainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="140dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/mainButtonText" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/AboutUsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/MainButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/aboutUsButtonText" />
+
+    <Button
+        android:id="@+id/ContactUsButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/header" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/contactUsButtonText" />
 
 </RelativeLayout>

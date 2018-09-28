@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class Contact_Us extends AppCompatActivity {
 
@@ -12,6 +13,49 @@ public class Contact_Us extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_us);
+
+        configureMainButton();
+        configureAboutUsButton();
+        configureContactUsButton();
+    }
+
+    private void configureMainButton()
+    {
+        Button mainButton = (Button) findViewById(R.id.MainButton);
+        mainButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(Contact_Us.this, Main.class));
+            }
+        });
+    }
+
+    private void configureAboutUsButton()
+    {
+        Button aboutUsButton = (Button) findViewById(R.id.AboutUsButton);
+        aboutUsButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(Contact_Us.this, About_Us.class));
+            }
+        });
+    }
+
+    private void configureContactUsButton()
+    {
+        Button contactUsButton = (Button) findViewById(R.id.ContactUsButton);
+        contactUsButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(Contact_Us.this, Contact_Us.class));
+            }
+        });
     }
 
 

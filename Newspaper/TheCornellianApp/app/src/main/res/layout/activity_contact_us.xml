@@ -7,28 +7,75 @@
     tools:context=".Contact_Us"
     android:background ="@color/Background">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="128dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/contactUsTitle"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:fontFamily="serif"
+    <include
+        layout = "@layout/action_bar"
+        android:id = "@+id/actionbar">
+    </include>
+
+    <ImageView
+        android:id="@+id/cornellianHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/cornellianHead"
+        android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/actionbar"
+        app:srcCompat="@drawable/cornellian_head" />
+
+    <Button
+        android:id="@+id/MainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/mainButtonText"
+        app:layout_constraintEnd_toStartOf="@+id/AboutUsButton"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AboutUsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/MainButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/aboutUsButtonText"
+        app:layout_constraintEnd_toStartOf="@+id/ContactUsButton"
+        app:layout_constraintTop_toTopOf="@+id/cornellianHead" />
+
+    <Button
+        android:id="@+id/ContactUsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/contactUsButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/namePrompt"
@@ -38,30 +85,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/AboutUsButton" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="337dp"
-        android:layout_height="150dp"
+        android:layout_height="107dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="@string/messageHint"
         android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:singleLine="false"
         android:typeface="serif"
-        app:layout_constraintBottom_toTopOf="@+id/submit_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.258"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.21" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <Button
         android:id="@+id/submit_button"
@@ -69,32 +113,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="92dp"
         android:text="@string/feedbackButton"
         android:textStyle="bold"
         android:typeface="serif"
-        app:layout_constraintBottom_toTopOf="@+id/twitter_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <ImageButton
         android:id="@+id/facebook_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/facebookButtonDesc"
         android:onClick="facebook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit_button"
-        app:layout_constraintVertical_bias="0.766"
-        app:srcCompat="@drawable/facebook_icon"
-        android:contentDescription="@string/facebookButtonDesc" />
+        app:srcCompat="@drawable/facebook_icon" />
 
     <ImageButton
         android:id="@+id/twitter_button"
@@ -104,29 +144,26 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/twitterButtonDesc"
         android:onClick="twitter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cornellian_button"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toEndOf="@+id/facebook_button"
-        app:srcCompat="@drawable/twitter_icon"
-        android:contentDescription="@string/twitterButtonDesc" />
+        app:srcCompat="@drawable/twitter_icon" />
 
     <ImageButton
         android:id="@+id/cornellian_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="@string/websiteButtonDesc"
         android:onClick="website"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit_button"
-        app:layout_constraintVertical_bias="0.77"
-        app:srcCompat="@drawable/cornellian_icon"
-        android:contentDescription="@string/websiteButtonDesc" />
+        app:srcCompat="@drawable/cornellian_icon" />
 
 </android.support.constraint.ConstraintLayout>

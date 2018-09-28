@@ -8,6 +8,10 @@
     <string name="facebookButtonDesc">Image Button to take you to the Cornellian Facebook</string>
     <string name="twitterButtonDesc">Image Button to take you to the Cornellian Twitter</string>
     <string name="websiteButtonDesc">Image Button to take you to the Cornellian Website</string>
+    <string name="cornellianHead">Header with Cornellian Text</string>
+    <string name="mainButtonText">Main</string>
+    <string name="aboutUsButtonText">About Us</string>
+    <string name="contactUsButtonText">Contact Us</string>
 
     <string-array name="items">
         <item>Home</item>
