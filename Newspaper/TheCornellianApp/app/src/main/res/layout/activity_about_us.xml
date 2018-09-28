@@ -17,8 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
@@ -57,5 +57,38 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:text="@string/contactUsButtonText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_above="@+id/textView5"
+        android:layout_below="@+id/AboutUsButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:text="\tThe Cornellian Newspaper is the school newspaper for Cornell College in Mount Vernon, Iowa. It has been in print for over eighty years. It publishes one paper copy each block and will be publishing shorter online articles between the weeks that there is no paper copy. "
+        android:textColor="#FFF"
+        android:textSize="16dp"
+        app:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="360dp"
+        android:layout_height="121dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:text="\tIf you have any suggestions or comments you wish to make about the paper, please direct them to the current editor in chief. If you are interested in joining our staff, please contact the current editor in chief."
+        android:textColor="#FFF"
+        android:textSize="16dp"
+        app:fontFamily="serif" />" />
 
 </RelativeLayout>
