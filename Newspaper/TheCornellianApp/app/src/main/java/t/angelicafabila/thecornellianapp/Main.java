@@ -1,6 +1,7 @@
 package t.angelicafabila.thecornellianapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 //import android.util.Log;
@@ -35,6 +36,7 @@ public class Main extends AppCompatActivity
         configureMainButton();
         configureAboutUsButton();
         configureContactUsButton();
+        configureArchiveButton();
     }
 
     private void configureMainButton()
@@ -72,6 +74,19 @@ public class Main extends AppCompatActivity
             public void onClick(View view)
             {
                 startActivity(new Intent(Main.this, Contact_Us.class));
+            }
+        });
+    }
+    private void configureArchiveButton()
+    {
+        Button archiveButton = (Button) findViewById(R.id.ArchiveButton);
+        archiveButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://cornellcollege.advantage-preservation.com/")));
             }
         });
     }

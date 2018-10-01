@@ -33,39 +33,53 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:layout_toStartOf="@+id/AboutUsButton"
-        android:layout_toLeftOf="@+id/AboutUsButton"
-        android:text="@string/mainButtonText" />
+        android:layout_marginTop="128dp"
+        android:text="@string/mainButtonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/AboutUsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/cornellianHead"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="144dp"
-        android:text="@string/aboutUsButtonText" />
+        android:layout_marginTop="128dp"
+        android:layout_toEndOf="@+id/MainButton"
+        android:layout_toRightOf="@+id/MainButton"
+        android:text="@string/aboutUsButtonText"
+        app:layout_constraintStart_toEndOf="@+id/MainButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/ContactUsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="145dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="128dp"
         android:layout_toEndOf="@+id/AboutUsButton"
         android:layout_toRightOf="@+id/AboutUsButton"
-        android:text="@string/contactUsButtonText" />
+        android:text="@string/contactUsButtonText"
+        app:layout_constraintStart_toEndOf="@+id/AboutUsButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ArchiveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_toEndOf="@+id/ContactUsButton"
+        android:layout_toRightOf="@+id/ContactUsButton"
+        android:text="@string/archiveButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ContactUsButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Introduction"
