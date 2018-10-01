@@ -33,7 +33,7 @@ public class Contact_Us extends AppCompatActivity {
         configureMainButton();
         configureAboutUsButton();
         configureContactUsButton();
-
+        configureArchiveButton();
     }
 
 //      public void SubmitMessage(View view) {
@@ -101,6 +101,19 @@ public class Contact_Us extends AppCompatActivity {
             public void onClick(View view)
             {
                 startActivity(new Intent(Contact_Us.this, Contact_Us.class));
+            }
+        });
+    }
+    private void configureArchiveButton()
+    {
+        Button archiveButton = (Button) findViewById(R.id.ArchiveButton);
+        archiveButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://cornellcollege.advantage-preservation.com/")));
             }
         });
     }
