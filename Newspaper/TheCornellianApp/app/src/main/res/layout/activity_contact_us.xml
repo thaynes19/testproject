@@ -33,14 +33,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="128dp"
         android:text="@string/mainButtonText"
-        app:layout_constraintEnd_toStartOf="@+id/AboutUsButton"
-        app:layout_constraintHorizontal_bias="0.394"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,27 +42,36 @@
         android:id="@+id/AboutUsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/MainButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_alignTop="@+id/cornellianHead"
+        android:layout_marginTop="128dp"
+        android:layout_toEndOf="@+id/MainButton"
+        android:layout_toRightOf="@+id/MainButton"
         android:text="@string/aboutUsButtonText"
-        app:layout_constraintEnd_toStartOf="@+id/ContactUsButton"
-        app:layout_constraintTop_toTopOf="@+id/cornellianHead" />
+        app:layout_constraintStart_toEndOf="@+id/MainButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/ContactUsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="128dp"
+        android:layout_toEndOf="@+id/AboutUsButton"
+        android:layout_toRightOf="@+id/AboutUsButton"
         android:text="@string/contactUsButtonText"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/AboutUsButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ArchiveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/MainButton"
+        android:layout_marginTop="128dp"
+        android:layout_toEndOf="@+id/ContactUsButton"
+        android:layout_toRightOf="@+id/ContactUsButton"
+        android:text="@string/archiveButtonText"
+        app:layout_constraintStart_toEndOf="@+id/ContactUsButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -137,6 +140,19 @@
         app:srcCompat="@drawable/facebook_icon" />
 
     <ImageButton
+        android:id="@+id/cornellian_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="@string/websiteButtonDesc"
+        android:onClick="website"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cornellian_icon" />
+
+    <ImageButton
         android:id="@+id/twitter_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -152,18 +168,5 @@
         app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toEndOf="@+id/facebook_button"
         app:srcCompat="@drawable/twitter_icon" />
-
-    <ImageButton
-        android:id="@+id/cornellian_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="36dp"
-        android:contentDescription="@string/websiteButtonDesc"
-        android:onClick="website"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/cornellian_icon" />
 
 </android.support.constraint.ConstraintLayout>

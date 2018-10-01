@@ -2,18 +2,17 @@ package t.angelicafabila.thecornellianapp;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.res.XmlResourceParser;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 //import android.util.Log;
 import android.view.View;
 //import android.widget.AdapterView;
 //import android.widget.ArrayAdapter;
-import android.view.ViewGroup;
 import android.widget.Button;
 //import android.widget.Spinner;
 //import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
+<<<<<<< HEAD
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import org.jsoup.Jsoup;
@@ -22,6 +21,11 @@ import org.jsoup.nodes.Document;
 public class Main extends AppCompatActivity
 {
 
+=======
+
+public class Main extends AppCompatActivity
+{
+>>>>>>> a4097c49b3973a6247740684a033abacdce60c0c
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,10 +44,17 @@ public class Main extends AppCompatActivity
 //        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 //        menuSpinner.setAdapter(myAdapter);
 
+<<<<<<< HEAD
 
         configureMainButton();
         configureAboutUsButton();
         configureContactUsButton();
+=======
+        configureMainButton();
+        configureAboutUsButton();
+        configureContactUsButton();
+        configureArchiveButton();
+>>>>>>> a4097c49b3973a6247740684a033abacdce60c0c
     }
 
     private void configureMainButton()
@@ -81,6 +92,19 @@ public class Main extends AppCompatActivity
             public void onClick(View view)
             {
                 startActivity(new Intent(Main.this, Contact_Us.class));
+            }
+        });
+    }
+    private void configureArchiveButton()
+    {
+        Button archiveButton = (Button) findViewById(R.id.ArchiveButton);
+        archiveButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://cornellcollege.advantage-preservation.com/")));
             }
         });
     }
